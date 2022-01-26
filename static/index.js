@@ -401,9 +401,9 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
         }
         // TODO 添加反馈
         if (mode === MODE_ENDLESS) return '';
-        if (score <= 49) return '试着好好练一下？';
-        if (score <= 99) return 'TCL';
-        if (score <= 149) return 'TQL';
+        if (score <= 49) return '玩的很好，别玩了';
+        if (score <= 99) return '是真的菜啊';
+        if (score <= 149) return 'OHHHHHHHHHHHHHHHH';
         if (score <= 199) return '您';
         return '人？';
     }
@@ -442,7 +442,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     w.initSetting = function() {
         document.getElementById("username").value = cookie("username") ? cookie("username") : "";
         document.getElementById("message").value = cookie("message") ? cookie("message") : "";
-        document.getElementsByTagName("title")[0].innerText = cookie("title") ? cookie("title") : "吃掉小鹿乃";
+        document.getElementsByTagName("title")[0].innerText = cookie("title") ? cookie("title") : "吃掉xxx";
         if (cookie("keyboard")) {
             document.getElementById("keyboard").value = cookie("keyboard");
             map = {}
